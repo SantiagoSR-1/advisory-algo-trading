@@ -33,7 +33,7 @@ We then graph our actual results vs our strategic results to determine the cours
 Looking at our value of strategy returns, we seem to have only a slight increase over time, leaving much room for improvement.
 
 
-Tuning of the algorithm
+#Tuning of the algorithm
 
 
 In the hopes for increasing the effectiveness of our algorithm, we start off by increasing our training dataset, from DateOffset, to a value of 10 months:
@@ -50,7 +50,7 @@ We also manipulated the SMA dates, to periods of 10 days and 150 days, for furth
 ![Classification Report 3](Images/svm_classification_report_SMA_10_150.PNG)
 
 
-Surprisingly, we managed to create an instance of 100% recall for the buy trigger for 1.0, a situation where relevant elements are found.
+Surprisingly, we managed to create an instance of 100% recall for the buy trigger for 1.0, a situation where all relevant elements are found.
 
 Using the new parameters, we apply them together to provide our new, enhanced algorithm:
 
@@ -67,6 +67,28 @@ Backtesting the model, we come upon the following result:
 
 
 Of note, there isn't much difference found in the new LR model, though we have made great strides in change SMA dates and the data input into the model itself.
+
+Comparing our original testing results to our final:
+
+
+![Classification Report 1](Images/svm_classification_report.PNG)
+
+![Classification Report 4](Images/svm_classification_report_final.PNG)
+
+
+There are some differences worth pointing out, like increasing of precisicion, recall for both the buy and sell triggers, allong with an overall increase in accuracy by 1%.
+
+However, if we are to look at the before and after for the logisitical regression model:
+
+
+![Classification Report 5](Images/lr_classification_report.PNG)
+
+![Classification Report 6](Images/lr_classification_report_final.PNG)
+
+
+We can observe that our logistical regression yields precision, and accuracy when compared to our original model.
+
+Therefore, we can confidently conclude that our newest model, using logistical regression, is an improvement over our tuned model.
 
 ---
 
