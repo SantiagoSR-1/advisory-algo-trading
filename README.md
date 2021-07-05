@@ -33,7 +33,7 @@ We then graph our actual results vs our strategic results to determine the cours
 Looking at our value of strategy returns, we seem to have only a slight increase over time, leaving much room for improvement.
 
 
-#Tuning of the algorithm
+##Tuning of the algorithm
 
 
 In the hopes for increasing the effectiveness of our algorithm, we start off by increasing our training dataset, from DateOffset, to a value of 10 months:
@@ -64,6 +64,9 @@ Backtesting the model, we come upon the following result:
 
 
 ![Graph 3]( Images/remodel_trade_original.PNG)
+
+
+## Ending notes
 
 
 Of note, there isn't much difference found in the new LR model, though we have made great strides in change SMA dates and the data input into the model itself.
