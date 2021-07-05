@@ -62,7 +62,11 @@ Attempting to validate our findings, we go onto creating a new machine learning 
 
 Backtesting the model, we come upon the following result:
 
+
 ![Graph 3]( Images/remodel_trade_original.PNG)
+
+
+Of note, there isn't much difference found in the new LR model, though we have made great strides in change SMA dates and the data input into the model itself.
 
 ---
 
